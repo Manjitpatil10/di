@@ -6,89 +6,7 @@
 <title>Happy Birthday Khushi ❤️</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-.night-sky{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:linear-gradient(to bottom,#050816,#0b1d51);
-overflow:hidden;
-z-index:0;
-opacity:0.35;
-pointer-events:none;
-}
-
-.moon{
-position:absolute;
-top:50px;
-right:50px;
-width:90px;
-height:90px;
-background:white;
-border-radius:50%;
-box-shadow:0 0 40px white;
-}
-
-.star{
-position:absolute;
-width:4px;
-height:4px;
-background:white;
-border-radius:50%;
-animation:twinkle 2s infinite alternate;
-}
-
-.s1{top:10%;left:10%;}
-.s2{top:25%;left:25%;}
-.s3{top:15%;left:50%;}
-.s4{top:35%;left:70%;}
-.s5{top:20%;left:85%;}
-.s6{top:55%;left:15%;}
-.s7{top:65%;left:55%;}
-.s8{top:75%;left:80%;}
-
-@keyframes twinkle{
-from{opacity:0.2;}
-to{opacity:1;}
-}
-
-.shooting-star{
-position:absolute;
-top:100px;
-left:-200px;
-width:180px;
-height:2px;
-background:linear-gradient(to right,white,transparent);
-transform:rotate(-25deg);
-animation:shoot 6s linear infinite;
-}
-
-@keyframes shoot{
-0%{
-left:-200px;
-top:100px;
-opacity:1;
-}
-100%{
-left:120%;
-top:300px;
-opacity:0;
-}
-}
-
-#welcome,
-#mainContent,
-.container{
-position:relative;
-z-index:2;
-}
+  
 body{
 background:#000;
 overflow-x:hidden;
@@ -438,18 +356,4 @@ c.remove();
 </script>
 
 </body>
-  <div class="night-sky">
-    <div class="moon"></div>
-
-    <div class="star s1"></div>
-    <div class="star s2"></div>
-    <div class="star s3"></div>
-    <div class="star s4"></div>
-    <div class="star s5"></div>
-    <div class="star s6"></div>
-    <div class="star s7"></div>
-    <div class="star s8"></div>
-
-    <div class="shooting-star"></div>
-  </div>
 </html>
