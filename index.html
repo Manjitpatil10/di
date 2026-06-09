@@ -249,8 +249,8 @@ bahut saari achievements,
 yaadein aur khushiyan lekar aaye.
 </p>
 
-<button class="secretBtn" onclick="showLetter()">
-💌 Read Secret Letter
+<button onclick="checkLetterPassword()">
+Open Secret Letter 💌
 </button>
 
 <div id="secretLetter">
@@ -298,10 +298,6 @@ createConfetti();
 
 let music=document.getElementById("bgMusic");
 music.play().catch(()=>{});
-}
-
-function showLetter(){
-document.getElementById("secretLetter").style.display="block";
 }
 
 let slides=document.querySelectorAll(".slide");
