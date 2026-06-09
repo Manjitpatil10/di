@@ -214,6 +214,46 @@ box-shadow:0 0 30px rgba(255,20,147,1);
 50%{transform:scale(1.05);}
 100%{transform:scale(1);}
 }
+  #girlAvatar{
+position:fixed;
+bottom:50px;
+left:-200px;
+z-index:9999;
+}
+
+.girl{
+font-size:120px;
+animation:walkIn 3s forwards;
+}
+
+.kiss{
+font-size:50px;
+opacity:0;
+animation:sendKiss 2s 3s forwards;
+}
+
+@keyframes walkIn{
+from{
+left:-200px;
+}
+to{
+left:40%;
+}
+}
+
+@keyframes sendKiss{
+0%{
+opacity:0;
+transform:translateX(0);
+}
+20%{
+opacity:1;
+}
+100%{
+opacity:0;
+transform:translateX(250px);
+}
+}
 </style>
 </head>
 <body>
@@ -282,6 +322,10 @@ placeholder="Enter Password">
 </button>
 
 <div id="secretLetter" style="display:">
+  <div id="girlAvatar" style="display:none;">
+    <div class="girl">👧</div>
+    <div class="kiss">😘💋❤️</div>
+  </div>
 
 <h3>For Khushi ❤️</h3>
 <p>
@@ -387,6 +431,7 @@ document.getElementById("letterPassword").value;
 if(password === "Khushi21"){
 
 document.getElementById("secretLetter").style.display="block";
+  document.getElementById("girlAvatar").style.display="block";
 
 }else{
 
