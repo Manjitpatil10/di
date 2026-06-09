@@ -256,9 +256,11 @@ yaadein aur khushiyan lekar aaye.
 <div id="secretLetter">
 <h3>For Khushi ❤️</h3>
 <p>
-Kabhi apni smile mat khona.
-Tumhari khushi hi tumhari sabse khoobsurat pehchaan hai.
-Aaj aur hamesha tumhare chehre par muskaan bani rahe.
+On your special day, I just want to say thank you for being such a wonderful person.
+</p><p>
+Your smile makes the world brighter and your kindness makes people feel special.
+</p><p>
+May all your dreams come true and may this year bring lots of happiness and success into your life.
 </p>
 
 <br>
@@ -352,7 +354,22 @@ c.remove();
 },6000);
 }
 }
+function checkLetterPassword(){
 
+let password =
+document.getElementById("letterPassword").value;
+
+if(password === "Khushi21"){
+
+document.getElementById("secretLetter").style.display="block";
+
+}else{
+
+alert("❌ Wrong Password");
+
+}
+
+}
 </script>
 
 </body>
