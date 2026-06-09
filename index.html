@@ -189,6 +189,31 @@ height:350px;
 font-size:1.2rem;
 }
 }
+  .letterBtn{
+background:linear-gradient(45deg,#ff1493,#ff69b4);
+color:white;
+padding:15px 35px;
+border:none;
+border-radius:50px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+margin-top:15px;
+box-shadow:0 0 20px rgba(255,20,147,0.7);
+transition:all 0.3s ease;
+animation:pulse 2s infinite;
+}
+
+.letterBtn:hover{
+transform:scale(1.1);
+box-shadow:0 0 30px rgba(255,20,147,1);
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
+}
 </style>
 </head>
 <body>
@@ -252,9 +277,8 @@ yaadein aur khushiyan lekar aaye.
 type="password"
 id="letterPassword"
 placeholder="Enter Password">
-
-<button onclick="checkLetterPassword()">
-Open Secret Letter 💌
+<button onclick="checkLetterPassword()" class="letterBtn">
+💌 Open Secret Letter
 </button>
 
 <div id="secretLetter" style="display:">
